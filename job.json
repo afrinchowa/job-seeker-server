@@ -1,0 +1,194 @@
+[
+  {
+    
+    "title": "Frontend Developer",
+    "company": "TechNova Ltd.",
+    "location": "Dhaka, Bangladesh",
+    "type": "Full-time",
+    "salary": "BDT 50,000 - 80,000",
+    "description": "We are looking for a skilled React.js developer with strong knowledge of modern web technologies.",
+    "postedDate": "2025-06-20",
+    "deadline": "2025-07-15",
+    "requirements": [
+      "2+ years of experience with React.js",
+      "Familiarity with REST APIs",
+      "Good understanding of Git"
+    ]
+  },
+  {
+    
+    "title": "Backend Developer",
+    "company": "CloudBridge",
+    "location": "Remote",
+    "type": "Part-time",
+    "salary": "BDT 40,000 - 60,000",
+    "description": "Join our backend team and build scalable APIs using Node.js and MongoDB.",
+    "postedDate": "2025-06-22",
+    "deadline": "2025-07-10",
+    "requirements": [
+      "1+ year experience with Node.js",
+      "Knowledge of MongoDB",
+      "Experience with Express framework"
+    ]
+  },
+  {
+    
+    "title": "UI/UX Designer",
+    "company": "Designify",
+    "location": "Chittagong, Bangladesh",
+    "type": "Internship",
+    "salary": "BDT 10,000 (Stipend)",
+    "description": "We're seeking a passionate intern to assist our design team in crafting clean, intuitive interfaces.",
+    "postedDate": "2025-06-18",
+    "deadline": "2025-07-05",
+    "requirements": [
+      "Basic knowledge of Figma or Adobe XD",
+      "Creative thinking and design sense",
+      "Team collaboration"
+    ]
+  },
+    {
+    
+    "title": "Full Stack Developer",
+    "company": "CodeWorks",
+    "location": "Sylhet, Bangladesh",
+    "type": "Full-time",
+    "salary": "BDT 60,000 - 90,000",
+    "description": "We're hiring a full stack developer experienced in MERN stack.",
+    "postedDate": "2025-06-15",
+    "deadline": "2025-07-10",
+    "requirements": ["3+ years with MERN", "Team collaboration", "Clean code practice"]
+  },
+  {
+    
+    "title": "Digital Marketing Executive",
+    "company": "AdMax Solutions",
+    "location": "Dhaka, Bangladesh",
+    "type": "Full-time",
+    "salary": "BDT 35,000 - 50,000",
+    "description": "We need a creative digital marketer with experience in social media and SEO.",
+    "postedDate": "2025-06-20",
+    "deadline": "2025-07-12",
+    "requirements": ["SEO knowledge", "Meta ads", "Creative writing"]
+  },
+  {
+    
+    "title": "Data Analyst",
+    "company": "Insightify",
+    "location": "Remote",
+    "type": "Contract",
+    "salary": "BDT 70,000 (project-based)",
+    "description": "Analyze complex datasets and provide reports for decision making.",
+    "postedDate": "2025-06-10",
+    "deadline": "2025-07-01",
+    "requirements": ["Python, Pandas", "Excel", "SQL"]
+  },
+  {
+    
+    "title": "Junior QA Engineer",
+    "company": "BugTrackers Ltd.",
+    "location": "Khulna, Bangladesh",
+    "type": "Full-time",
+    "salary": "BDT 30,000 - 45,000",
+    "description": "We need a QA engineer to test and ensure quality for our web applications.",
+    "postedDate": "2025-06-17",
+    "deadline": "2025-07-05",
+    "requirements": ["Manual testing", "Bug tracking", "Attention to detail"]
+  },
+  {
+    
+    "title": "Project Manager",
+    "company": "DevCycle",
+    "location": "Chattogram, Bangladesh",
+    "type": "Full-time",
+    "salary": "BDT 85,000 - 120,000",
+    "description": "Looking for a strong project lead with Agile and Scrum experience.",
+    "postedDate": "2025-06-13",
+    "deadline": "2025-07-08",
+    "requirements": ["Agile/Scrum", "Communication", "Team leadership"]
+  },
+  {
+    
+    "title": "Graphics Designer",
+    "company": "PixelHub",
+    "location": "Remote",
+    "type": "Part-time",
+    "salary": "BDT 20,000 - 30,000",
+    "description": "Design social media posts and branding materials for clients.",
+    "postedDate": "2025-06-18",
+    "deadline": "2025-07-03",
+    "requirements": ["Adobe Illustrator", "Photoshop", "Creativity"]
+  },
+  {
+    
+    "title": "Customer Support Executive",
+    "company": "HelpMates",
+    "location": "Barishal, Bangladesh",
+    "type": "Full-time",
+    "salary": "BDT 25,000 - 35,000",
+    "description": "Answer queries and provide support to customers via chat and email.",
+    "postedDate": "2025-06-14",
+    "deadline": "2025-07-06",
+    "requirements": ["Good English", "Patience", "Problem-solving"]
+  },
+  {
+    
+    "title": "Mobile App Developer",
+    "company": "AppCraft",
+    "location": "Dhaka, Bangladesh",
+    "type": "Full-time",
+    "salary": "BDT 70,000 - 100,000",
+    "description": "Build modern cross-platform apps with Flutter.",
+    "postedDate": "2025-06-21",
+    "deadline": "2025-07-15",
+    "requirements": ["Flutter", "Firebase", "UI/UX knowledge"]
+  },
+  {
+    
+    "title": "Technical Content Writer",
+    "company": "WriteFlow",
+    "location": "Remote",
+    "type": "Freelance",
+    "salary": "BDT 1,000 per article",
+    "description": "Write technical tutorials and blog posts about software engineering.",
+    "postedDate": "2025-06-19",
+    "deadline": "2025-07-10",
+    "requirements": ["English writing", "Basic coding knowledge", "SEO basics"]
+  },
+  {
+    
+    "title": "Cybersecurity Analyst",
+    "company": "SecureTech",
+    "location": "Dhaka, Bangladesh",
+    "type": "Full-time",
+    "salary": "BDT 90,000 - 130,000",
+    "description": "Monitor and secure systems from potential threats and vulnerabilities.",
+    "postedDate": "2025-06-16",
+    "deadline": "2025-07-12",
+    "requirements": ["Network Security", "SIEM tools", "Incident response"]
+  },
+  {
+    
+    "title": "DevOps Engineer",
+    "company": "CloudOps",
+    "location": "Sylhet, Bangladesh",
+    "type": "Full-time",
+    "salary": "BDT 80,000 - 110,000",
+    "description": "Implement CI/CD pipelines and manage cloud infrastructure.",
+    "postedDate": "2025-06-20",
+    "deadline": "2025-07-15",
+    "requirements": ["AWS/Azure", "Docker", "Kubernetes"]
+  },
+  {
+    
+    "title": "AI Research Scientist",
+    "company": "AI Innovations",
+    "location": "Remote",
+    "type": "Full-time",
+    "salary": "BDT 120,000 - 150,000",
+    "description": "Conduct research in artificial intelligence and machine learning.",
+    "postedDate": "2025-06-22",
+    "deadline": "2025-07-20",
+    "requirements": ["PhD in CS", "Machine Learning", "Python"]
+  } 
+]
