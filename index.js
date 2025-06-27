@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -34,30 +34,20 @@ run().catch(console.dir);
 const jobsCollection = client.db('job-seeker').collection('jobs');
 
 app.get('/jobs', async (req, res) => {
-  try {
-    const jobs = await jobsCollection.find({}).toArray();
-    res.status(200).json(jobs);
-  } catch (error) {
-    console.error("Error fetching jobs:", error);
-    res.status(500).json({ message: "Internal Server Error" });
-  }
+ const cursor =jobsCollection.find();
+ const result =await cursor.toArray();
+ res.status(200).json(result);
 });
 
 app.get('/jobs/:id', async (req, res) => {
-  try {
-    const jobId = req.params.id;
-    const job = await jobsCollection.findOne({ _id: new ObjectId(jobId) });
-    if (job) {
-      res.status(200).json(job);
-    } else {
-      res.status(404).json({ message: "Job not found" });
-    }
-  } catch (error) {
-    console.error("Error fetching job:", error);
-    res.status(500).json({ message: "Internal Server Error" });
-  }
+  const id = req.params.id;
+  const query = { _id: new ObjectId(id) };
+  const result = await jobsCollection.findOne(query);
+  res.send(result);
 });
 
+
+// Test route to check if the server is running
 app.get('/', (req, res) => {
   res.send('Job server is running');
 });
