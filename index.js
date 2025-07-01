@@ -47,6 +47,16 @@ app.get('/jobs/:id', async (req, res) => {
 });
 
 
+// job application apis
+const jobAppliationCollection = client.db('job-seeker').collection('job_applications');
+app.post('/job-applications', async (req, res) => {
+  const application = req.body;
+const result = await jobAppliationCollection.insertOne(application)
+res.send(result);
+ 
+});
+
+
 // Test route to check if the server is running
 app.get('/', (req, res) => {
   res.send('Job server is running');
