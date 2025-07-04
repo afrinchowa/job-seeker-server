@@ -55,10 +55,26 @@ const jobAppliationCollection = client
 
 app.get("/job-applications", async (req, res) => {
   const email = req.query.email;
-const query = {applicant_email: email};
-const result = await jobAppliationCollection.find(query).toArray();
+  const query = { applicant_email: email };
+  const result = await jobAppliationCollection.find(query).toArray();
+ for(const application of result){
+  console.log(application.job_id)
+  const query1 ={_id:new ObjectId(application.job_id)};
+  const job = await jobsCollection.findOne(query1);
+if(job){
+  application.title = job.title;
+  application.company = job.company;
+  application.location = job.location;
+  application.salary = job.salary;
+  application.job_type = job.job_type;
+  application.experience = job.experience;
+  application.description = job.description;
+  application.requirements = job.requirements;
+  application.benefits = job.benefits;
+}
+ }
+ 
   res.send(result);
-  
 });
 
 app.get("/job-applications/:id", async (req, res) => {
@@ -68,15 +84,11 @@ app.get("/job-applications/:id", async (req, res) => {
   res.send(result);
 });
 
-
 app.post("/job-applications", async (req, res) => {
   const application = req.body;
   const result = await jobAppliationCollection.insertOne(application);
   res.send(result);
 });
-
-
-
 
 // Test route to check if the server is running
 app.get("/", (req, res) => {
