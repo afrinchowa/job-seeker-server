@@ -36,6 +36,11 @@ run().catch(console.dir);
 const jobsCollection = client.db("job-seeker").collection("jobs");
 
 app.get("/jobs", async (req, res) => {
+  const email = req.query.email;
+  let query={}
+  if(email){
+query ={hr_email:email}
+  }
   const cursor = jobsCollection.find();
   const result = await cursor.toArray();
   res.status(200).json(result);
@@ -92,6 +97,26 @@ app.get("/job-applications/:id", async (req, res) => {
 app.post("/job-applications", async (req, res) => {
   const application = req.body;
   const result = await jobAppliationCollection.insertOne(application);
+
+  const id =application.job_id;
+  const query = {_id:new ObjectId(id)}
+  const job = awit jobsCollection.findOne(query)
+  let count =0;
+  if(job.applicationCount){
+    newCount = job.applicationCount+1;
+
+  }else{
+    newCount = 1;
+  }
+
+  // now update the job info
+  const filter = {_id:new ObjectId(id)}
+  const updatedDoc ={
+    $set:{
+      applicationCount : newCount
+    }
+  }
+  const updatedResult = await jobsCollection.updateOne(filter,updatedDoc)
   res.send(result);
 });
 
